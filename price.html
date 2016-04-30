@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>Средства для ухода</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
 </head>
 
 <body class="inner-body">
@@ -78,7 +79,10 @@
                     <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас — это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
                 </div>
                 <div class="wrapper-price-right">
-                    <p>Наша мастерская расположена в центре города, поэтому<br> сделать стильную стрижку можно в любое время, даже в<br> обеденный перерыв. Здесь вы можете погрузиться в удобную<br> для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+                    <p>Наша мастерская расположена в центре города, поэтому
+                        <br> сделать стильную стрижку можно в любое время, даже в
+                        <br> обеденный перерыв. Здесь вы можете погрузиться в удобную
+                        <br> для вас атмосферу, чувствовать себя комфортно и свободно!</p>
                 </div>
     </main>
     <footer class="footer-main">
@@ -103,8 +107,20 @@
             </section>
         </div>
     </footer>
-    <script type="text/javascript">
-    </script>
+    <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <h2>Личный кабинет</h2>
+        <form>
+            <p>Введите свой логин и пароль</p>
+            <input class="modal-login" type="text" name="login" placeholder="Логин" required>
+            <input class="modal-password" type="password" name="password" placeholder="Пароль" required>
+            <input class="modal-checkbox" type="checkbox" id="forget-me" checked>
+            <label for="forget-me">Запомните меня</label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+            <button class="btn modal-button">Войти</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

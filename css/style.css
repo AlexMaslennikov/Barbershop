@@ -434,6 +434,7 @@ ul.news-preview {
 
 .title h1 {
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .breadcrumbs h2 {
@@ -583,7 +584,7 @@ ul.news-preview {
     display: inline-block;
     vertical-align: top;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-right: 20px;
     margin-bottom: 20px;
     min-height: 286px;
@@ -674,16 +675,19 @@ ul.news-preview {
 
 .top-pic {
 	line-height: 0;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .bottom-pic {
-	font-size: 0;
+    font-size: 0;
+	line-height: 0;
 }
 
 .small-pic {
     display: inline-block;
     margin-right: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .small-pic:last-child {
@@ -693,6 +697,57 @@ ul.news-preview {
 .descr {
 	width: 400px;
 	float: right;
+}
+
+.descr-top {
+    margin-bottom: 65px;
+}
+
+.available p {
+    margin: 24px 0 30px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.descr .right {
+    color: #aeaeae;
+}
+
+.descr-text {
+    margin-bottom: 29px;
+}
+
+.descr-bottom h2 {
+    margin: 0 0 35px 0;
+}
+
+.descr-bottom ul {
+    margin: 0;
+    padding: 0;
+}
+
+.descr-bottom li {
+    padding-left: 20px;
+    list-style-type: none;
+    position: relative;
+}
+
+.descr-bottom li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    top: 7px;
+    left: 0;
+    transform: rotate(45deg);
 }
 
 .features-item {
@@ -709,7 +764,7 @@ ul.news-preview {
 	width: 940px;
 	margin: 0 auto;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
 }
 
 .title-price h2 {
@@ -744,10 +799,26 @@ ul.news-preview {
 
 .wrapper-price-left ul {
 	margin: 0;
+    padding: 0;
 }
 
 .wrapper-price-left li {
-	margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    list-style-type: none;
+    position: relative;
+}
+
+.wrapper-price-left li::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    background-color: #000;
+    top: 7px;
+    left: 0;
+    transform: rotate(45deg);
 }
 
 .wrapper-price-left li:last-child {
@@ -763,6 +834,7 @@ ul.news-preview {
 	margin: 0;
 	margin-bottom: 35px;
 	font-size: 24px;
+    line-height: 30px;
 }
 
 .wrapper-price-left p,
@@ -914,7 +986,7 @@ td.service-price {
 }
 
 .modal-content {
-    position: absolute;
+    position: fixed;
     display: none;
     top: 120px;
     left: 50%;
@@ -924,6 +996,7 @@ td.service-price {
     padding: 50px 80px;
     background: #f8f3f0 url(../img/light-texture.jpg);
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+    z-index: 10;
 }
 
 .modal-content-show {
